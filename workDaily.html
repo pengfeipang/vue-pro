@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>作品日报</title>
+    <script>
+        var html = document.documentElement;
+        window.rem = html.getBoundingClientRect().width / 750 *100;
+        html.style.fontSize = window.rem + 'px';
+    </script>
+    <style>
+        * {margin: 0;padding: 0;}
+        html,body {
+            background: #f2f3f5;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            color: #6a97ec;
+            text-decoration:none;
+        }
+        section {
+            margin: .4rem;
+            background: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 3px 3px 5px#ddd;
+        }
+        header {
+            height: .8rem;
+            background: #5e8de7;
+        }
+        p {
+            font-size: .28rem;
+            color: #fff;
+            line-height: .8rem;
+            text-align: center;
+        }
+        .daily-list ul li {
+            height: .8rem;
+            line-height: .8rem;
+            position: relative;
+        }
+        .daily-list ul li p {
+            font-size: .3rem;
+            color: #666;
+            position: absolute;
+        }
+        .p1 {
+            left: .75rem;
+        }
+        .p2 {
+            right: .3rem;
+        }
+        .daily-list ul li::before {
+            content: '';
+            position: absolute;
+            width: .16rem;
+            height: .16rem;
+            display: block;
+            border-radius: 50%;
+            left: .3rem;
+            top: .325rem;
+        }
+        .daily-list ul li:nth-child(1)::before {
+            background: #5b9f66;
+        }
+        .daily-list ul li:nth-child(2)::before {
+            background: #f3a040;
+        }
+        .daily-list ul li:nth-child(3)::before {
+            background: #628ae1;
+        }
+        .daily-list ul li:nth-child(4)::before {
+            background: #e54e47;
+        }
+        footer {
+            padding: 0 .3rem;
+            display: none;
+        }
+        footer p {
+            border-top: solid 1px #e5e5e5;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+            <p>2017-07-06 作品日报</p>
+        </header>
+        <div class="daily-list">
+            <ul>
+                <li>
+                    <p class="p1">在读人数</p>
+                    <p class="p2">12</p>
+                </li>
+                <li>
+                    <p class="p1">收藏</p>
+                    <p class="p2">123</p>
+                </li>
+                <li>
+                    <p class="p1">打赏逐浪币</p>
+                    <p class="p2">234</p>
+                </li>
+                <li>
+                    <p class="p1">鲜花</p>
+                    <p class="p2">345</p>
+                </li>
+            </ul>
+        </div>
+        <footer>
+            <p><a href="###">查看详情</a></p>
+        </footer>
+    </section>
+</body>
+</html>
